@@ -13,20 +13,15 @@
 NAME	=	libft.a
 HDRS	=	libft.h
 
-SRCS	=	ft_is_functions_part_1.c \
-			ft_is_functions_part_2.c \
-			ft_mem_functions_part_1.c \
-			ft_mem_functions_part_2.c \
-			ft_str_functions_part_1.c \
-			ft_str_functions_part_2.c \
-			ft_str_functions_part_3.c \
-			ft_put_functions.c \
-			ft_to_functions.c \
+SRCS	=	ft_is_funcs.c \
+			ft_mem_funcs.c \
+			ft_str_funcs.c \
+			ft_put_funcs.c \
+			ft_to_funcs.c \
 			ft_atoi_itoa_calloc_bzero.c \
 			ft_split.c
 
-B_SRCS	=	ft_lst_functions_part_1.c \
-			ft_lst_functions_part_2.c
+B_SRCS	=	ft_lst_funcs.c \
 
 SDIR	=	./
 ODIR	=	objs/

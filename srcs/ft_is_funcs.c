@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_functions_part_2.c                           :+:      :+:    :+:   */
+/*   ft_is_functions_part_1.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: phelen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,7 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+int	ft_isascii(int c)
+{
+	return (c >= 0 && c <= 127);
+}
+
+int	ft_isdigit(int c)
+{
+	return (c >= 48 && c <= 57);
+}
+
+int	ft_islowercase(int c)
+{
+	return ((c >= 65 && c <= 90));
+}
+
+int	ft_isuppercase(int c)
+{
+	return ((c >= 97 && c <= 122));
+}
+
+int	ft_isprint(int c)
+{
+	return (c >= 32 && c <= 126);
+}
 
 int	ft_isspace(int c)
 {
