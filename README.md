@@ -13,3 +13,5 @@ Skills:
 - Imperative programming;
 - Rigor;
 - Algorithms & AI.
+
+* Norm (norminette) are respected except functions count in file
