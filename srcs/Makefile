@@ -18,7 +18,7 @@ SRCS	=	ft_is_funcs.c \
 			ft_str_funcs.c \
 			ft_put_funcs.c \
 			ft_to_funcs.c \
-			ft_atoi_itoa_calloc_bzero.c \
+			ft_calloc.c \
 			ft_split.c
 
 B_SRCS	=	ft_lst_funcs.c \
