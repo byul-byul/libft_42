@@ -11,7 +11,12 @@
 # **************************************************************************** #
 
 NAME	=	libft.a
+
 HDRS	=	libft.h
+
+SDIR	=	./srcs/
+HDIR	=	./incls/
+ODIR	=	./objs/
 
 SRCS	=	ft_is_funcs.c \
 			ft_mem_funcs.c \
@@ -20,16 +25,13 @@ SRCS	=	ft_is_funcs.c \
 			ft_to_funcs.c \
 			ft_calloc.c \
 			ft_split.c
-
 B_SRCS	=	ft_lst_funcs.c \
 
-SDIR	=	./
-ODIR	=	objs/
-FLGS	=	-Wall -Wextra -Werror
+FLGS	=	-I$(HDIR) -Wall -Wextra -Werror
 CMPL	=	gcc
 
 OBJS	=	$(addprefix $(ODIR), $(SRCS:.c=.o))
-B_OBJS	=	${B_SRCS:.c=.o}
+B_OBJS	=	$(addprefix $(ODIR), $(B_SRCS:.c=.o))
 
 $(ODIR)%.o : $(SDIR)%.c
 	mkdir -p $(ODIR)
