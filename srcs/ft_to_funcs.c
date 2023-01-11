@@ -41,14 +41,14 @@ char	*ft_itoa(int num)
 		if (num == 0)
 			itoa[0] = '0';
 		else if (num < 0)
+		{
 			itoa[0] = '-';
+			num = -num;
+		}
 		itoa[num_len] = '\0';
 		while (num)
 		{
-			if (num < 0)
-				itoa[--num_len] = (num % 10) * -1 + '0';
-			else
-				itoa[--num_len] = num % 10 + '0';
+			itoa[--num_len] = num % 10 + '0';
 			num /= 10;
 		}
 		return (itoa);
